@@ -1,21 +1,25 @@
 import SwiftUI
 
 struct ResultView: View {
-    var success: Bool
-    var correctAnswers: Int
-    var incorrectAnswers: Int
-    
+    var result: Result
+    var repeatt: () -> Void
+    var exam: [Question]
+    @State var answerIndex: Int
+    var isCorrect: [Bool]
+    var answer: [String]
+    @Environment(\.dismiss) var dismiss
+
     var body: some View {
         ZStack {
             // Fondo que cambia entre verde y rojo
-            (success ? Color.green.opacity(0.3) : Color.red.opacity(0.3))
+            (result.success ? Color.green.opacity(0.3) : Color.red.opacity(0.3))
                 .ignoresSafeArea()
             
             VStack(spacing: 40) {
                 // Texto central de aprobado o no
-                Text(success ? "¡Has aprobado!" : "No has aprobado")
+                Text(result.success ? "¡Has aprobado!" : "No has aprobado")
                     .font(.system(size: 36, weight: .bold, design: .rounded))
-                    .foregroundColor(success ? Color.green : Color.red)
+                    .foregroundColor(result.success ? Color.green : Color.red)
                     .padding()
                     .background(Color.white.opacity(0.8))
                     .cornerRadius(15)
@@ -28,7 +32,7 @@ struct ResultView: View {
                             Text("Acertadas")
                                 .font(.title2)
                                 .foregroundColor(.green)
-                            Text("\(correctAnswers)")
+                            Text("\(result.correctAnswers)")
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
                         }
@@ -39,7 +43,7 @@ struct ResultView: View {
                             Text("Falladas")
                                 .font(.title2)
                                 .foregroundColor(.red)
-                            Text("\(incorrectAnswers)")
+                            Text("\(result.incorrectAnswers)")
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
                         }
@@ -50,11 +54,10 @@ struct ResultView: View {
                     .shadow(radius: 10)
                 }
                 .padding(.horizontal)
-                
-                // Botones de acciones: repetir o ver errores
                 HStack(spacing: 30) {
                     Button(action: {
-                        // Acción para repetir
+                        dismiss()
+                        repeatt()
                     }) {
                         Text("Repetir")
                             .font(.title2)
@@ -67,9 +70,7 @@ struct ResultView: View {
                             .shadow(radius: 5)
                     }
                     
-                    Button(action: {
-                        // Acción para ver errores
-                    }) {
+                        NavigationLink(destination: ErrorsTest(exam: exam, answerIndex: answerIndex, isCorrect: isCorrect, answer: answer)) {
                         Text("Ver errores")
                             .font(.title2)
                             .bold()
@@ -90,6 +91,7 @@ struct ResultView: View {
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView(success: true, correctAnswers: 8, incorrectAnswers: 2)
+        ResultView(result: Result(exam: [], success: true, correctAnswers: 22, incorrectAnswers: 2), repeatt: {}, exam: [], answerIndex: 0, isCorrect: [], answer: [])
     }
 }
+
