@@ -7,6 +7,7 @@ struct ResultView: View {
     @State var answerIndex: Int
     var isCorrect: [Bool]
     var answer: [String]
+    var startNewExam: () -> Void // Acción para iniciar un nuevo examen
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
@@ -70,7 +71,7 @@ struct ResultView: View {
                             .shadow(radius: 5)
                     }
                     
-                        NavigationLink(destination: ErrorsTest(exam: exam, answerIndex: answerIndex, isCorrect: isCorrect, answer: answer)) {
+                    NavigationLink(destination: ErrorsTest(exam: exam, answerIndex: answerIndex, isCorrect: isCorrect, answer: answer)) {
                         Text("Ver errores")
                             .font(.title2)
                             .bold()
@@ -83,15 +84,54 @@ struct ResultView: View {
                     }
                 }
                 .padding(.horizontal)
+                
+                // Botones adicionales
+                HStack(spacing: 30) {
+                    NavigationLink(destination: ContentView()) {
+                        Text("Ir al Menú")
+                            .font(.title2)
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.gray.opacity(0.8))
+                            .foregroundColor(.white)
+                            .cornerRadius(15)
+                            .shadow(radius: 5)
+                    }
+
+                    Button(action: {
+                        startNewExam() // Acción para iniciar un nuevo examen
+                        dismiss()
+                    }) {
+                        Text("Hacer Otro Examen")
+                            .font(.title2)
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(Color.green.opacity(0.8))
+                            .foregroundColor(.white)
+                            .cornerRadius(15)
+                            .shadow(radius: 5)
+                    }
+                }
+                .padding(.horizontal)
             }
             .padding()
         }
+        .navigationBarBackButtonHidden()
     }
 }
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView(result: Result(exam: [], success: true, correctAnswers: 22, incorrectAnswers: 2), repeatt: {}, exam: [], answerIndex: 0, isCorrect: [], answer: [])
+        ResultView(
+            result: Result(exam: [], success: true, correctAnswers: 22, incorrectAnswers: 2),
+            repeatt: {},
+            exam: [],
+            answerIndex: 0,
+            isCorrect: [],
+            answer: [],
+            startNewExam: {}
+        )
     }
 }
-

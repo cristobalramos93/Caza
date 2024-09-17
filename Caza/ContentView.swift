@@ -50,9 +50,7 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .cornerRadius(10)
                     }
-                    Button(action: {
-                        print("Botón Derecha Inferior presionado")
-                    }) {
+                    NavigationLink(destination: Historial()) {
                         Text("Historial")
                             .frame(width: 150, height: 50)
                             .background(Color.orange)

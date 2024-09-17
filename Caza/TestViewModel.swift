@@ -14,6 +14,7 @@ enum TypeTest {
     case random
     case lesson(Int)
     case errors
+    case historial(Result)
 }
 
 struct Result: Codable {
@@ -35,12 +36,23 @@ class TestViewModel: ObservableObject {
     @Environment(\.managedObjectContext) private var viewContext
 
     func createTest(_ type: TypeTest) {
-        self.historicalResults = CoreDataStack.shared.fetchAllResults()
+        //self.historicalResults = CoreDataStack.shared.fetchAllResults()
         switch type {
         case .random: createRandomTest()
         case .lesson(let lesson): createLessonTest(lesson)
         case .errors: createErrorsTest()
+        case .historial(let result): createHistorialTest(result)
         }
+    }
+    
+    func createHistorialTest(_ result: Result) {
+        exam = result.exam
+        isCorrect = Array(repeating: false, count: exam.count)
+        answer = Array(repeating: "", count: exam.count)
+        answered = Array(repeating: false, count: exam.count)
+        answerIndex = 0
+        isRepeat = false
+        fin = false
     }
     
     func createRandomTest() {
@@ -98,6 +110,16 @@ class TestViewModel: ObservableObject {
         answered = Array(repeating: false, count: exam.count)
         answerIndex = 0
         isRepeat = true
+        fin = false
+    }
+    
+    func newExam() {
+        exam = []
+        isCorrect = Array(repeating: false, count: exam.count)
+        answer = Array(repeating: "", count: exam.count)
+        answered = Array(repeating: false, count: exam.count)
+        answerIndex = 0
+        isRepeat = false
         fin = false
     }
     

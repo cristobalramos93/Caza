@@ -34,7 +34,9 @@ struct Test: View {
                                                                exam: viewModel.exam,
                                                                answerIndex: viewModel.answerIndex,
                                                                isCorrect: viewModel.isCorrect ?? [],
-                                                               answer: viewModel.answer ?? [])) {
+                                                               answer: viewModel.answer ?? [], startNewExam: {
+                            isReady = false
+                            viewModel.newExam()})) {
                                 Text("Finalizar")
                                     .padding()
                                     .frame(maxWidth: .infinity, alignment: .leading)
