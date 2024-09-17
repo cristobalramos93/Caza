@@ -20,13 +20,13 @@ struct Test: View {
                     if viewModel.fin {
                         NavigationLink(destination: ResultView(result: viewModel.result(),
                                                                repeatt: {
-                            viewModel.isRepeat = false
                             viewModel.repeatt()
                         },
                                                                exam: viewModel.exam,
                                                                answerIndex: viewModel.answerIndex,
                                                                isCorrect: viewModel.isCorrect ?? [],
-                                                               answer: viewModel.answer ?? [], startNewExam: {
+                                                               answer: viewModel.answer ?? [], 
+                                                               startNewExam: {
                             isReady = false
                             viewModel.newExam()})) {
                                 Text("Corregir")

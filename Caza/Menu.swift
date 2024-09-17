@@ -19,7 +19,7 @@ struct Menu: View {
 
                 VStack(spacing: 40) {
                     // Título principal
-                    Text("Exámenes de Armas")
+                    Text("Test de Armas D y E")
                         .font(.system(size: 36, weight: .bold, design: .rounded))
                         .foregroundColor(.white)
                         .shadow(radius: 10)

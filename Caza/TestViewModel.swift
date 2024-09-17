@@ -53,7 +53,7 @@ class TestViewModel: ObservableObject {
     
     func createRandomTest() {
         if !isRepeat {
-            let l1 = Array(t1.shuffled().prefix(4))
+            let l1 = Array(t1.shuffled().prefix(3))
             for question in l1 {
                 exam.append(question)
             }
@@ -61,11 +61,11 @@ class TestViewModel: ObservableObject {
             for question in l2 {
                 exam.append(question)
             }
-            let l3 = Array(t3.shuffled().prefix(3))
+            let l3 = Array(t3.shuffled().prefix(2))
             for question in l3 {
                 exam.append(question)
             }
-            let l4 = Array(t4.shuffled().prefix(4))
+            let l4 = Array(t4.shuffled().prefix(3))
             for question in l4 {
                 exam.append(question)
             }
@@ -77,7 +77,7 @@ class TestViewModel: ObservableObject {
             for question in l6 {
                 exam.append(question)
             }
-            let l7 = Array(t7.shuffled().prefix(4))
+            let l7 = Array(t7.shuffled().prefix(3))
             for question in l7 {
                 exam.append(question)
             }
@@ -112,7 +112,7 @@ class TestViewModel: ObservableObject {
     }
     
     func result() -> Result {
-        let succes = isCorrect?.filter({ $0 == false }).count ?? 0 < 4
+        let succes = isCorrect?.filter({ $0 == false }).count ?? 0 < 5
         let result =  Result(exam: exam,
                       success: succes,
                       correctAnswers: isCorrect?.filter({ $0 == true }).count ?? 0,

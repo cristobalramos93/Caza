@@ -238,7 +238,7 @@ let t1: [Question] = [
         answer1: "Cargar es montarla para disparar, alimentarla introducir cartuchos en el depósito",
         answer2: "Cargar es introducir cartuchos en el depósito, alimentarla es montarla para disparar",
         answer3: "No existe diferencia",
-        solucion: "Cargar es introducir cartuchos en el depósito, alimentarla es montarla para disparar"
+        solucion: "Cargar es montarla para disparar, alimentarla introducir cartuchos en el depósito"
     ),
     Question(
         question: "¿Puede darse el caso de que además de los extractores, las escopetas superpuestas dispongan de expulsores?",
@@ -266,7 +266,7 @@ let t1: [Question] = [
         answer1: "El alza",
         answer2: "El punto de mira",
         answer3: "La longitud del cañón",
-        solucion: "El alza"
+        solucion: "El punto de mira"
     ),
     Question(
         question: "¿Qué pieza del mecanismo de disparo transmite el movimiento del disparador?",
@@ -522,7 +522,7 @@ let t2: [Question] = [
         answer1: "Los especialmente peligrosos para la integridad física de las personas",
         answer2: "Los que tengan puntas de flecha",
         answer3: "Ambas respuestas son verdaderas",
-        solucion: "Ambas respuestas son verdaderas"
+        solucion: "Los especialmente peligrosos para la integridad física de las personas"
     ),
     Question(
         question: "Según el Reglamento de Armas, un “Arma de fuego corta” es:",
@@ -557,7 +557,7 @@ let t2: [Question] = [
         answer1: "Sí",
         answer2: "No, por ser un arma clasificada en la 3ª categoría",
         answer3: "Depende del proyectil",
-        solucion: "Sí"
+        solucion: "No, por ser un arma clasificada en la 3ª categoría"
     ),
     Question(
         question: "Las armas reglamentadas, se clasifican en:",
@@ -578,7 +578,7 @@ let t2: [Question] = [
         answer1: "4ª",
         answer2: "1ª",
         answer3: "6ª",
-        solucion: "4ª"
+        solucion: "1ª"
     ),
     Question(
         question: "Un revólver, de 20 centímetros de cañón y del calibre 38, ¿a qué categoría pertenece?",
@@ -601,342 +601,377 @@ let t2: [Question] = [
         answer3: "Las dos anteriores son correctas",
         solucion: "Las dos anteriores son correctas"
     ),
-    Question(
-        question: "¿Cuál de las siguientes armas pertenece a la 3ª categoría?",
-        answer1: "Las escopetas",
-        answer2: "Armas largas rayadas del calibre 5´6 milímetros para tiro deportivo",
-        answer3: "Las dos anteriores son correctas",
-        solucion: "Las dos anteriores son correctas"
-    ),
-    Question(
-        question: "¿Cuál de las siguientes armas pertenece a la 2ª categoría?",
-        answer1: "Las escopetas",
-        answer2: "Las ballestas",
-        answer3: "Armas largas rayadas",
-        solucion: "Armas largas rayadas"
-    ),
-    Question(
-        question: "¿A qué categoría pertenecen las armas largas rayadas del calibre 5´6 milímetros, para tiro deportivo?",
-        answer1: "A la 3ª categoría",
-        answer2: "A la 4ª categoría",
-        answer3: "A la 5ª categoría",
-        solucion: "A la 3ª categoría"
-    ),
-    Question(
-        question: "¿Cuál de las siguientes armas pertenece a la 3ª categoría?",
-        answer1: "Las escopetas",
-        answer2: "Los revólveres",
-        answer3: "Los arcos",
-        solucion: "Las escopetas"
-    ),
-    Question(
-        question: "Una carabina de aire comprimido, de repetición, que dispara proyectiles cuya energía en la boca de fuego excede de 24.2 julios, ¿en qué categoría está clasificada?",
-        answer1: "En la 4ª.1",
-        answer2: "No está clasificada en ninguna categoría",
-        answer3: "En la 3ª.3",
-        solucion: "En la 3ª.3"
-    ),
-    Question(
-        question: "¿En qué categoría sería incluida un arma larga rayada, del calibre 5,6 milímetros (.22 americano), de percusión anular, semiautomática, para tiro deportivo?",
-        answer1: "3ª categoría",
-        answer2: "4ª categoría",
-        answer3: "2ª categoría",
-        solucion: "3ª categoría"
-    ),
-    Question(
-        question: "Los revólveres de doble acción, accionados por aire u otro gas comprimido, no asimilados a escopetas, ¿en qué categoría están incluidos?",
-        answer1: "En la 4ª.1",
-        answer2: "En la 1ª",
-        answer3: "En la 3ª.3",
-        solucion: "En la 4ª.1"
-    ),
-    Question(
-        question: "Las carabinas de ánima lisa o rayada, de un sólo tiro, accionadas por aire u otro gas comprimido, no asimiladas a escopetas, ¿a qué categoría pertenecen?",
-        answer1: "A la 3ª.2",
-        answer2: "A la 4ª.2",
-        answer3: "A la 5ª.2",
-        solucion: "A la 4ª.2"
-    ),
-    Question(
-        question: "Los revólveres de acción simple, accionados por aire u otro gas comprimido, no asimilados a escopetas, ¿en qué categoría están clasificados?",
-        answer1: "En la 3ª.2",
-        answer2: "En la 4ª.2",
-        answer3: "En la 5ª.2",
-        solucion: "En la 4ª.2"
-    ),
-    Question(
-        question: "Una carabina de aire comprimido, de repetición, que dispara proyectiles cuya energía en la boca de fuego no excede de 24.2 julios, ¿en qué categoría está clasificada?",
-        answer1: "En la 4ª.1",
-        answer2: "No está clasificada en ninguna categoría",
-        answer3: "En la 3ª.3",
-        solucion: "En la 4ª.1"
-    ),
-    Question(
-        question: "¿En qué categoría están clasificadas las armas blancas, en general?",
-        answer1: "En la 5ª",
-        answer2: "En la 6ª",
-        answer3: "En la 7ª",
-        solucion: "En la 5ª"
-    ),
-    Question(
-        question: "Un rifle semiautomático cuyo cargador admite cinco cartuchos, ¿es arma prohibida a particulares?",
-        answer1: "No",
-        answer2: "Sí",
-        answer3: "Sí, siempre que se utilice para cazar",
-        solucion: "No"
-    ),
-    Question(
-        question: "¿En qué categoría se encuentran clasificadas las ballestas?",
-        answer1: "Categoría 5ª.2",
-        answer2: "Categoría 7ª.2",
-        answer3: "Categoría 4ª.2",
-        solucion: "Categoría 7ª.2"
-    ),
-    Question(
-        question: "Las armas largas específicas para desempeñar las funciones de guardería, ¿en qué categoría se encuentran clasificadas?",
-        answer1: "En la 1ª categoría",
-        answer2: "En la categoría 2ª.1",
-        answer3: "En la categoría 2ª.2",
-        solucion: "En la categoría 2ª.2"
-    ),
-    Question(
-        question: "¿A qué categoría pertenecen las armas largas de fuego, del calibre 22 americano, de percusión anular, y de repetición para tiro deportivo?",
-        answer1: "A la 1ª categoría",
-        answer2: "A la 2ª categoría",
-        answer3: "A la 3ª categoría",
-        solucion: "A la 3ª categoría"
-    ),
-    Question(
-        question: "¿En qué categoría están clasificadas las armas largas rayadas para caza mayor?",
-        answer1: "Categoría 3ª.3",
-        answer2: "Categoría 5ª.2",
-        answer3: "Categoría 2ª",
-        solucion: "Categoría 2ª"
-    ),
-    Question(
-        question: "¿En qué categoría están clasificadas las armas inutilizadas?",
-        answer1: "Categoría 3ª.3",
-        answer2: "Categoría 5ª.2",
-        answer3: "Categoría 9ª",
-        solucion: "Categoría 9ª"
-    ),
-    Question(
-        question: "¿En qué categoría están clasificadas las armas de alarma?",
-        answer1: "Categoría 3ª.3",
-        answer2: "Categoría 5ª.2",
-        answer3: "Categoría 7ª.6",
-        solucion: "Categoría 7ª.6"
-    ),
-    Question(
-        question: "Un rifle que puede realizar disparos sucesivos al accionar repetidamente el disparador se denomina:",
-        answer1: "Automático",
-        answer2: "Semiautomático",
-        answer3: "De repetición",
-        solucion: "Semiautomático"
-    ),
-    Question(
-        question: "Un rifle semiautomático cuyo cargador admite doce cartuchos, ¿es arma prohibida a particulares?",
-        answer1: "No",
-        answer2: "Sí, pues su capacidad de carga supera los once cartuchos",
-        answer3: "Sí, siempre que se utilice para cazar",
-        solucion: "Sí, pues su capacidad de carga supera los once cartuchos"
-    ),
-    Question(
-        question: "Una pistola semiautomática cuyo cargador admite veinticinco cartuchos, ¿es arma prohibida a particulares?",
-        answer1: "No",
-        answer2: "Sí, pues su capacidad de carga supera los veintiún cartuchos",
-        answer3: "Sí, siempre que se utilice para cazar",
-        solucion: "Sí, pues su capacidad de carga supera los veintiún cartuchos"
-    ),
-    Question(
-        question: "Un arma de fuego automática que haya sido transformada en semiautomática, ¿es arma prohibida a particulares?",
-        answer1: "Sí",
-        answer2: "No",
-        answer3: "Dependerá del uso de la misma",
-        solucion: "Sí"
-    ),
-    Question(
-        question: "Una escopeta calibre 20 mm. pertenece a la categoría:",
-        answer1: "3ª.2",
-        answer2: "Es un arma prohibida",
-        answer3: "Es un arma de guerra",
-        solucion: "Es un arma prohibida"
-    ),
-    Question(
-        question: "Sobre las armas de guerra, ¿qué está prohibido a los particulares?",
-        answer1: "Su adquisición, tenencia y uso",
-        answer2: "No les están prohibidas",
-        answer3: "Las dos respuestas son falsas",
-        solucion: "Su adquisición, tenencia y uso"
-    ),
-    Question(
-        question: "Las armas de fuego automáticas, son siempre:",
-        answer1: "Armas de guerra",
-        answer2: "Armas de la 1ª categoría",
-        answer3: "Ambas respuestas son falsas",
-        solucion: "Armas de guerra"
-    ),
-    Question(
-        question: "¿Quién puede legalizar las armas de guerra para un particular?",
-        answer1: "No puede legalizarse",
-        answer2: "Ministro de Defensa",
-        answer3: "Ministro del Interior",
-        solucion: "No puede legalizarse"
-    ),
-    Question(
-        question: "Los calibres 308 win (7'62 X 51 mm.) y 7'62 x 39 son de los denominados de guerra, ¿qué condiciones han de cumplirse para utilizarlas en caza mayor?",
-        answer1: "No se pueden utilizar por ser calibre de guerra",
-        answer2: "Se podrán utilizar con bala expansiva y rifle de repetición",
-        answer3: "Se podrán utilizar con autorización especial del Ministerio de Defensa",
-        solucion: "Se podrán utilizar con bala expansiva y rifle de repetición"
-    ),
-    Question(
-        question: "De las que se citan a continuación, ¿cuáles son armas prohibidas?",
-        answer1: "Los silenciadores adaptables a armas de fuego",
-        answer2: "Los puñales",
-        answer3: "Las respuestas anteriores son armas prohibidas",
-        solucion: "Las respuestas anteriores son armas prohibidas"
-    ),
-    Question(
-        question: "De las que se citan a continuación, ¿cuáles se consideran armas prohibidas?",
-        answer1: "Las armas de fuego que sean resultado de modificar sustancialmente las características de fabricación u origen de otras armas, sin la reglamentaria autorización de modelo o prototipo",
-        answer2: "Armas con culata plegable para facilitar los movimientos del cazador en terrenos abruptos",
-        answer3: "Las respuestas anteriores son armas prohibidas",
-        solucion: "Las respuestas anteriores son armas prohibidas"
-    ),
-    Question(
-        question: "Las armas de fuego que sean resultado de modificar sustancialmente las características de fabricación u origen de otras armas, sin la reglamentaria autorización de modelo o prototipo, ¿qué clase de armas son?",
-        answer1: "Reglamentadas",
-        answer2: "Prohibidas a particulares",
-        answer3: "Prohibidas",
-        solucion: "Prohibidas"
-    ),
-    Question(
-        question: "¿Cuáles de las siguientes armas están prohibidas?",
-        answer1: "Las armas de fuego largas con cañones recortados",
-        answer2: "Los cuchillos de hoja superior a 11 centímetros de longitud",
-        answer3: "Las cerbatanas",
-        solucion: "Las armas de fuego largas con cañones recortados"
-    ),
-    Question(
-        question: "Las armas de fuego, reales o simuladas, combinadas con armas blancas, son:",
-        answer1: "Armas prohibidas",
-        answer2: "Armas reglamentadas",
-        answer3: "Armas prohibidas a particulares",
-        solucion: "Armas prohibidas"
-    ),
-    Question(
-        question: "Un arma de fuego simulada bajo apariencia de cualquier otro objeto, es:",
-        answer1: "Un arma prohibida",
-        answer2: "Un arma prohibida a particulares",
-        answer3: "Un arma reglamentada",
-        solucion: "Un arma prohibida"
-    ),
-    Question(
-        question: "De las armas blancas que se detallan, ¿cuáles están prohibidas?",
-        answer1: "Los puñales",
-        answer2: "Los machetes del Ejército para desollar la caza",
-        answer3: "Las dos anteriores",
-        solucion: "Los puñales"
-    ),
-    Question(
-        question: "¿Se pueden utilizar miras telescópicas en las armas de la categoría 2ª.2?",
-        answer1: "Sí",
-        answer2: "No",
-        answer3: "Está prohibido",
-        solucion: "Sí"
-    ),
-    Question(
-        question: "¿Se pueden utilizar miras telescópicas en las armas de la categoría 3ª.2?",
-        answer1: "Sí",
-        answer2: "No",
-        answer3: "Está prohibido",
-        solucion: "Sí"
-    ),
-    Question(
-        question: "Un arma larga que contenga un dispositivo especial, en su culata, para una pistola legalizada, es:",
-        answer1: "Un arma prohibida",
-        answer2: "Un arma combinada",
-        answer3: "Un arma reglamentada",
-        solucion: "Un arma prohibida"
-    ),
-    Question(
-        question: "De las armas blancas que se detallan, ¿cuáles están prohibidas?",
-        answer1: "Los puñales",
-        answer2: "Navajas de hoja inferior a 11 centímetros",
-        answer3: "Espadas",
-        solucion: "Los puñales"
-    ),
-    Question(
-        question: "Un cuchillo de monte, de dos filos, puntiagudo y con una hoja de 20 centímetros, sería:",
-        answer1: "Un arma de la 4ª categoría",
-        answer2: "Un arma blanca permitida",
-        answer3: "Un arma prohibida",
-        solucion: "Un arma prohibida"
-    ),
-    Question(
-        question: "De las que se relacionan, ¿cuáles son armas prohibidas?",
-        answer1: "Navajas automáticas",
-        answer2: "Navajas de menos de 11 centímetros de longitud de hoja",
-        answer3: "Cuchillos de monte de doble filo con hoja de 13 centímetros de longitud",
-        solucion: "Navajas automáticas"
-    ),
-    Question(
-        question: "¿Se puede poseer un rompecabezas, como instrumento auxiliar en caza mayor?",
-        answer1: "Sí",
-        answer2: "Sí, con autorización",
-        answer3: "No, ya que se trata de arma prohibida",
-        solucion: "No, ya que se trata de arma prohibida"
-    ),
-    Question(
-        question: "¿Cuántos silenciadores se pueden tener con un arma larga rayada para caza mayor?",
-        answer1: "Uno para cada arma que se posea",
-        answer2: "Uno solo, independientemente del número de armas que se posea",
-        answer3: "Ninguno, está prohibido",
-        solucion: "Ninguno, está prohibido"
-    ),
-    Question(
-        question: "¿Puede una persona con licencia de armas tener y utilizar armas de fuego largas de cañones recortados?",
-        answer1: "No; sólo está permitido a funcionarios especialmente habilitados",
-        answer2: "Sí, si dispone de autorización",
-        answer3: "Sí, si la utiliza solamente para cazar",
-        solucion: "No; sólo está permitido a funcionarios especialmente habilitados"
-    ),
-    Question(
-        question: "Un arma simulada, combinada con un arma blanca, ¿es un arma prohibida?",
-        answer1: "No",
-        answer2: "Sí",
-        answer3: "Depende del tipo de arma blanca de que se trate",
-        solucion: "Sí"
-    ),
-    Question(
-        question: "Una escopeta de caza legalmente adquirida en Francia, que posea en su culata un mecanismo para alojar otras armas, ¿puede ser legalizada en nuestro país?",
-        answer1: "Sí, con autorización francesa",
-        answer2: "No, por ser un arma prohibida",
-        answer3: "Sí, en todos los casos",
-        solucion: "No, por ser un arma prohibida"
-    ),
-    Question(
-        question: "Una escopeta de caza legalmente adquirida en Francia, que posea en su culata un mecanismo para alojar una navaja para desollar ¿puede ser legalizada en nuestro país?",
-        answer1: "No, por ser un arma prohibida",
-        answer2: "Sí, con autorización francesa",
-        answer3: "Sí, en todos los casos",
-        solucion: "No, por ser un arma prohibida"
-    ),
-    Question(
-        question: "De los tipos de cartuchería que se citan, ¿cuál está prohibida a particulares?",
-        answer1: "La munición metálica blindada",
-        answer2: "La cartuchería con bala expansiva",
-        answer3: "La cartuchería con balas perforantes, explosivas o incendiarias",
-        solucion: "La cartuchería con balas perforantes, explosivas o incendiarias"
-    ),
-    Question(
-        question: "De los tipos de cartuchería que se citan, ¿cuál está prohibida a particulares?",
-        answer1: "La munición metálica blindada",
-        answer2: "La cartuchería con bala expansiva",
-        answer3: "Las municiones con proyectiles dum-dum",
-        solucion: "Las municiones con proyectiles dum-dum"
-    )
+        Question(
+            question: "Además de las armas de fuego largas rayadas para vigilancia y guardería, ¿qué otras armas están incluidas en la 2a categoría?",
+            answer1: "Las pistolas",
+            answer2: "Las ballestas",
+            answer3: "Los cañones estriados adaptables a escopetas de caza con recámara para cartuchos metálicos no clasificados como de guerra",
+            solucion: "Los cañones estriados adaptables a escopetas de caza con recámara para cartuchos metálicos no clasificados como de guerra"
+        ),
+        Question(
+            question: "Además de las armas de fuego largas rayadas para vigilancia y guardería, ¿qué otras armas están incluidas en la 2a categoría?",
+            answer1: "Las armas de fuego largas rayadas utilizables para caza mayor",
+            answer2: "Las pistolas",
+            answer3: "Las ballestas",
+            solucion: "Las armas de fuego largas rayadas utilizables para caza mayor"
+        ),
+        Question(
+            question: "Los cañones estriados adaptables a escopetas de caza, con recámara para cartuchos metálicos, no clasificados como armas de guerra, ¿en qué categoría están incluidos?",
+            answer1: "En la 2a categoría",
+            answer2: "En la 3a categoría",
+            answer3: "En la 4a categoría",
+            solucion: "En la 2a categoría"
+        ),
+        Question(
+            question: "¿En qué categoría están clasificadas las escopetas?",
+            answer1: "Categoría 3a.1",
+            answer2: "Categoría 3a.2",
+            answer3: "Categoría 2a.2",
+            solucion: "Categoría 3a.2"
+        ),
+        Question(
+            question: "¿Cuál de las siguientes armas pertenece a la 2a categoría?",
+            answer1: "Las armas de fuego largas rayadas utilizadas para caza mayor",
+            answer2: "Las armas de fuego largas para vigilancia y guardería",
+            answer3: "Las dos anteriores son correctas",
+            solucion: "Las dos anteriores son correctas"
+        ),
+        Question(
+            question: "¿Cuál de las siguientes armas pertenece a la 3a categoría?",
+            answer1: "Las escopetas",
+            answer2: "Armas largas rayadas del calibre 5,6 milímetros para tiro deportivo",
+            answer3: "Las dos anteriores son correctas",
+            solucion: "Las dos anteriores son correctas"
+        ),
+        Question(
+            question: "¿Cuál de las siguientes armas pertenece a la 2a categoría?",
+            answer1: "Las escopetas",
+            answer2: "Las ballestas",
+            answer3: "Armas largas rayadas",
+            solucion: "Armas largas rayadas"
+        ),
+        Question(
+            question: "¿A qué categoría pertenecen las armas largas rayadas del calibre 5,6 milímetros para tiro deportivo?",
+            answer1: "A la 3a categoría",
+            answer2: "A la 4a categoría",
+            answer3: "A la 5a categoría",
+            solucion: "A la 3a categoría"
+        ),
+        Question(
+            question: "¿Cuál de las siguientes armas pertenece a la 3a categoría?",
+            answer1: "Las escopetas",
+            answer2: "Los revólveres",
+            answer3: "Los arcos",
+            solucion: "Las escopetas"
+        ),
+        Question(
+            question: "Una carabina de aire comprimido, de repetición, que dispara proyectiles cuya energía en la boca de fuego excede de 24.2 julios, ¿en qué categoría está clasificada?",
+            answer1: "En la 4a.1",
+            answer2: "No está clasificada en ninguna categoría",
+            answer3: "En la 3a.3",
+            solucion: "En la 3a.3"
+        ),
+        Question(
+            question: "¿En qué categoría sería incluida un arma larga rayada, del calibre 5,6 milímetros (.22 americano), de percusión anular, semiautomática, para tiro deportivo?",
+            answer1: "3a categoría",
+            answer2: "4a categoría",
+            answer3: "2a categoría",
+            solucion: "3a categoría"
+        ),
+        Question(
+            question: "Los revólveres de doble acción, accionados por aire u otro gas comprimido, no asimilados a escopetas, ¿en qué categoría están incluidos?",
+            answer1: "En la 4a.1",
+            answer2: "En la 1a",
+            answer3: "En la 3a.3",
+            solucion: "En la 4a.1"
+        ),
+        Question(
+            question: "Las carabinas de ánima lisa o rayada, de un solo tiro, accionadas por aire u otro gas comprimido, no asimiladas a escopetas, ¿a qué categoría pertenecen?",
+            answer1: "A la 3a.2",
+            answer2: "A la 4a.2",
+            answer3: "A la 5a.2",
+            solucion: "A la 4a.2"
+        ),
+        Question(
+            question: "Los revólveres de acción simple, accionados por aire u otro gas comprimido, no asimilados a escopetas, ¿en qué categoría están clasificados?",
+            answer1: "En la 3a.2",
+            answer2: "En la 4a.2",
+            answer3: "En la 5a.2",
+            solucion: "En la 4a.2"
+        ),
+        Question(
+            question: "Una carabina de aire comprimido, de repetición, que dispara proyectiles cuya energía en la boca de fuego no excede de 24.2 julios, ¿en qué categoría está clasificada?",
+            answer1: "En la 4a.1",
+            answer2: "No está clasificada en ninguna categoría",
+            answer3: "En la 3a.3",
+            solucion: "En la 4a.1"
+        ),
+        Question(
+            question: "¿En qué categoría están clasificadas las armas blancas, en general?",
+            answer1: "En la 5a",
+            answer2: "En la 6a",
+            answer3: "En la 7a",
+            solucion: "En la 5a"
+        ),
+        Question(
+            question: "Un rifle semiautomático cuyo cargador admite cinco cartuchos, ¿es arma prohibida a particulares?",
+            answer1: "No",
+            answer2: "Sí",
+            answer3: "Sí, siempre que se utilice para cazar",
+            solucion: "No"
+        ),
+        Question(
+            question: "¿En qué categoría se encuentran clasificadas las ballestas?",
+            answer1: "Categoría 5a.2",
+            answer2: "Categoría 7a.2",
+            answer3: "Categoría 4a.2",
+            solucion: "Categoría 7a.2"
+        ),
+        Question(
+            question: "Las armas largas específicas para desempeñar las funciones de guardería, ¿en qué categoría se encuentran clasificadas?",
+            answer1: "En la 1a categoría",
+            answer2: "En la categoría 2a.1",
+            answer3: "En la categoría 2a.2",
+            solucion: "En la categoría 2a.1"
+        ),
+        Question(
+            question: "¿A qué categoría pertenecen las armas largas de fuego, del calibre 22 americano, de percusión anular, y de repetición para tiro deportivo?",
+            answer1: "A la 1a categoría",
+            answer2: "A la 2a categoría",
+            answer3: "A la 3a categoría",
+            solucion: "A la 3a categoría"
+        ),
+        Question(
+            question: "¿En qué categoría están clasificadas las armas largas rayadas para caza mayor?",
+            answer1: "Categoría 3a.3",
+            answer2: "Categoría 5a.2",
+            answer3: "Categoría 2a",
+            solucion: "Categoría 2a"
+        ),
+        Question(
+            question: "¿En qué categoría están clasificadas las armas inutilizadas?",
+            answer1: "Categoría 3a.3",
+            answer2: "Categoría 5a.2",
+            answer3: "Categoría 9a",
+            solucion: "Categoría 9a"
+        ),
+        Question(
+            question: "¿En qué categoría están clasificadas las armas de alarma?",
+            answer1: "Categoría 3a.3",
+            answer2: "Categoría 5a.2",
+            answer3: "Categoría 7a.6",
+            solucion: "Categoría 7a.6"
+        ),
+        Question(
+            question: "Un rifle que puede realizar disparos sucesivos al accionar repetidamente el disparador se denomina:",
+            answer1: "Automático",
+            answer2: "Semiautomático",
+            answer3: "De repetición",
+            solucion: "Semiautomático"
+        ),
+        Question(
+            question: "Un rifle semiautomático cuyo cargador admite doce cartuchos, ¿es arma prohibida a particulares?",
+            answer1: "No",
+            answer2: "Sí, pues su capacidad de carga supera los once cartuchos",
+            answer3: "Sí, siempre que se utilice para cazar",
+            solucion: "Sí, pues su capacidad de carga supera los once cartuchos"
+        ),
+        Question(
+            question: "Una pistola semiautomática cuyo cargador admite veinticinco cartuchos, ¿es arma prohibida a particulares?",
+            answer1: "No",
+            answer2: "Sí, pues su capacidad de carga supera los veintiún cartuchos",
+            answer3: "Sí, siempre que se utilice para cazar",
+            solucion: "Sí, pues su capacidad de carga supera los veintiún cartuchos"
+        ),
+        Question(
+            question: "Un arma de fuego automática que haya sido transformada en semiautomática, ¿es arma prohibida a particulares?",
+            answer1: "Sí",
+            answer2: "No",
+            answer3: "Dependerá del uso de la misma",
+            solucion: "Sí"
+        ),
+        Question(
+            question: "¿Cuál de las siguientes afirmaciones es cierta?",
+            answer1: "Una escopeta calibre 20 mm. pertenece a la categoría 3a.2",
+            answer2: "Una escopeta calibre 20 mm. es un arma prohibida",
+            answer3: "Una escopeta calibre 20 mm. es un arma de guerra",
+            solucion: "Una escopeta calibre 20 mm. es un arma de guerra"
+        ),
+        Question(
+            question: "Sobre las armas de guerra, ¿qué está prohibido a los particulares?",
+            answer1: "Su adquisición, tenencia y uso",
+            answer2: "No les están prohibidas",
+            answer3: "Las dos respuestas son falsas",
+            solucion: "Su adquisición, tenencia y uso"
+        ),
+        Question(
+            question: "Las armas de fuego automáticas, son siempre:",
+            answer1: "Armas de guerra",
+            answer2: "Armas de la 1a categoría",
+            answer3: "Ambas respuestas son falsas",
+            solucion: "Armas de guerra"
+        ),
+        Question(
+            question: "¿Quién puede legalizar las armas de guerra para un particular?",
+            answer1: "No puede legalizarse",
+            answer2: "Ministro de Defensa",
+            answer3: "Ministro del Interior",
+            solucion: "No puede legalizarse"
+        ),
+        Question(
+            question: "Los calibres 308 win (7'62 X 51 mm.) y 7'62 x 39 son de los denominados de guerra, ¿qué condiciones han de cumplirse para utilizarlas en caza mayor?",
+            answer1: "No se pueden utilizar por ser calibre de guerra",
+            answer2: "Se podrán utilizar con bala expansiva y rifle de repetición",
+            answer3: "Se podrán utilizar con autorización especial del Ministerio de Defensa",
+            solucion: "Se podrán utilizar con bala expansiva y rifle de repetición"
+        ),
+        Question(
+            question: "De las que se citan a continuación, ¿cuáles son armas prohibidas?",
+            answer1: "Los silenciadores adaptables a armas de fuego",
+            answer2: "Los puñales",
+            answer3: "Las respuestas anteriores (A y B) son armas prohibidas",
+            solucion: "Las respuestas anteriores (A y B) son armas prohibidas"
+        ),
+        Question(
+            question: "De las que se citan a continuación, ¿cuáles se consideran armas prohibidas?",
+            answer1: "Las armas de fuego que sean resultado de modificar sustancialmente las características de fabricación u origen de otras armas, sin la reglamentaria autorización de modelo o prototipo",
+            answer2: "Armas con culata plegable para facilitar los movimientos del cazador en terrenos abruptos",
+            answer3: "Las respuestas anteriores (A y B) son armas prohibidas",
+            solucion: "Las armas de fuego que sean resultado de modificar sustancialmente las características de fabricación u origen de otras armas, sin la reglamentaria autorización de modelo o prototipo"
+        ),
+        Question(
+            question: "Las armas de fuego que sean resultado de modificar sustancialmente las características de fabricación u origen de otras armas, sin la reglamentaria autorización de modelo o prototipo, ¿qué clase de armas son?",
+            answer1: "Reglamentadas",
+            answer2: "Prohibidas a particulares",
+            answer3: "Prohibidas",
+            solucion: "Prohibidas"
+        ),
+        Question(
+            question: "¿Cuáles de las siguientes armas están prohibidas?",
+            answer1: "Las armas de fuego largas con cañones recortados",
+            answer2: "Los cuchillos de hoja superior a 11 centímetros de longitud",
+            answer3: "Las cerbatanas",
+            solucion: "Las armas de fuego largas con cañones recortados"
+        ),
+        Question(
+            question: "Las armas de fuego, reales o simuladas, combinadas con armas blancas, son:",
+            answer1: "Armas prohibidas",
+            answer2: "Armas reglamentadas",
+            answer3: "Armas prohibidas a particulares",
+            solucion: "Armas prohibidas"
+        ),
+        Question(
+            question: "Un arma de fuego simulada bajo apariencia de cualquier otro objeto, es:",
+            answer1: "Un arma prohibida",
+            answer2: "Un arma prohibida a particulares",
+            answer3: "Un arma reglamentada",
+            solucion: "Un arma prohibida"
+        ),
+        Question(
+            question: "De las armas blancas que se detallan, ¿cuáles están prohibidas?",
+            answer1: "Los puñales",
+            answer2: "Los machetes del Ejército para desollar la caza",
+            answer3: "Las dos anteriores",
+            solucion: "Las dos anteriores"
+        ),
+        Question(
+            question: "¿Se pueden utilizar miras telescópicas en las armas de la categoría 2a.2?",
+            answer1: "Sí",
+            answer2: "No",
+            answer3: "Está prohibido",
+            solucion: "Sí"
+        ),
+        Question(
+            question: "¿Se pueden utilizar miras telescópicas en las armas de la categoría 3a.2?",
+            answer1: "Sí",
+            answer2: "No",
+            answer3: "Está prohibido",
+            solucion: "Sí"
+        ),
+        Question(
+            question: "Un arma larga que contenga un dispositivo especial, en su culata, para una pistola legalizada, es:",
+            answer1: "Un arma prohibida",
+            answer2: "Un arma combinada",
+            answer3: "Un arma reglamentada",
+            solucion: "Un arma prohibida"
+        ),
+        Question(
+            question: "De las armas blancas que se detallan, ¿cuáles están prohibidas?",
+            answer1: "Los puñales",
+            answer2: "Navajas de hoja inferior a 11 centímetros",
+            answer3: "Espadas",
+            solucion: "Los puñales"
+        ),
+        Question(
+            question: "Un cuchillo de monte, de dos filos, puntiagudo y con una hoja de 20 centímetros, sería:",
+            answer1: "Un arma de la 4a categoría",
+            answer2: "Un arma blanca permitida",
+            answer3: "Un arma prohibida",
+            solucion: "Un arma blanca permitida"
+        ),
+        Question(
+            question: "De las que se relacionan, ¿cuáles son armas prohibidas?",
+            answer1: "Navajas automáticas",
+            answer2: "Navajas de menos de 11 centímetros de longitud de hoja",
+            answer3: "Cuchillos de monte de doble filo con hoja de 13 centímetros de longitud",
+            solucion: "Navajas automáticas"
+        ),
+        Question(
+            question: "Se puede poseer un rompecabezas, como instrumento auxiliar en caza mayor:",
+            answer1: "Sí",
+            answer2: "Sí, con autorización",
+            answer3: "No, ya que se trata de arma prohibida",
+            solucion: "No, ya que se trata de arma prohibida"
+        ),
+        Question(
+            question: "¿Cuántos silenciadores se pueden tener con un arma larga rayada para caza mayor?",
+            answer1: "Uno para cada arma que se posea",
+            answer2: "Uno solo, independientemente del número de armas que se posea",
+            answer3: "Ninguno, está prohibido",
+            solucion: "Ninguno, está prohibido"
+        ),
+        Question(
+            question: "¿Puede una persona con licencia de armas tener y utilizar armas de fuego largas de cañones recortados?",
+            answer1: "No; sólo está permitido a funcionarios especialmente habilitados",
+            answer2: "Sí, si dispone de autorización",
+            answer3: "Sí, si la utiliza solamente para cazar",
+            solucion: "No; sólo está permitido a funcionarios especialmente habilitados"
+        ),
+        Question(
+            question: "Un arma simulada, combinada con un arma blanca, ¿es un arma prohibida?",
+            answer1: "No",
+            answer2: "Sí",
+            answer3: "Depende del tipo de arma blanca de que se trate",
+            solucion: "Sí"
+        ),
+        Question(
+            question: "Una escopeta de caza legalmente adquirida en Francia, que posea en su culata un mecanismo para alojar otras armas, ¿puede ser legalizada en nuestro país?",
+            answer1: "Sí, con autorización francesa",
+            answer2: "No, por ser un arma prohibida",
+            answer3: "Sí, en todos los casos",
+            solucion: "No, por ser un arma prohibida"
+        ),
+        Question(
+            question: "Una escopeta de caza legalmente adquirida en Francia, que posea en su culata un mecanismo para alojar una navaja para desollar, ¿puede ser legalizada en nuestro país?",
+            answer1: "No, por ser un arma prohibida",
+            answer2: "Sí, con autorización francesa",
+            answer3: "Sí, en todos los casos",
+            solucion: "No, por ser un arma prohibida"
+        ),
+        Question(
+            question: "De los tipos de cartuchería que se citan, ¿cuál está prohibida a particulares?",
+            answer1: "La munición metálica blindada",
+            answer2: "La cartuchería con bala expansiva",
+            answer3: "La cartuchería con balas perforantes, explosivas o incendiarias",
+            solucion: "La cartuchería con balas perforantes, explosivas o incendiarias"
+        ),
+        Question(
+            question: "De los tipos de cartuchería que se citan, ¿cuál está prohibida a particulares?",
+            answer1: "La munición metálica blindada",
+            answer2: "La cartuchería con bala expansiva",
+            answer3: "Las municiones con proyectiles dum-dum",
+            solucion: "Las municiones con proyectiles dum-dum"
+        )
 ]
 
 let t3: [Question] = [
@@ -952,7 +987,7 @@ let t3: [Question] = [
         answer1: "La Intervención de Armas de su residencia",
         answer2: "La Intervención de Armas del lugar de la compra",
         answer3: "Las dos anteriores pueden ser válidas",
-        solucion: "Las dos anteriores pueden ser válidas"
+        solucion: "La Intervención de Armas del lugar de la compra"
     ),
     Question(
         question: "¿Es cierto si afirmamos que no es preceptiva la guía de circulación para amparar una escopeta que su titular transportará de una localidad a otra, provisto de guía de pertenencia y licencia correspondiente?",
@@ -1015,7 +1050,7 @@ let t3: [Question] = [
         answer1: "La guía de pertenencia",
         answer2: "Autorización escrita por el titular",
         answer3: "Ningún otro documento",
-        solucion: "La guía de pertenencia"
+        solucion: "Ningún otro documento"
     ),
     Question(
         question: "¿Es cierto que el Reglamento de Armas contempla que las armas reglamentadas de cualquier categoría y sus componentes esenciales acabados circularán en envases debidamente acondicionados para su seguridad durante el traslado?",
@@ -1071,7 +1106,7 @@ let t3: [Question] = [
         answer1: "No",
         answer2: "Cuando vayan desmontadas",
         answer3: "Sí, siempre que no se envíe conjuntamente con munición",
-        solucion: "Sí, siempre que no se envíe conjuntamente con munición"
+        solucion: "No"
     ),
     Question(
         question: "¿Cuándo se puede enviar a reparar las armas cargadas?",
@@ -1099,7 +1134,7 @@ let t3: [Question] = [
         answer1: "Sí se puede, siempre que tenga licencia de armas",
         answer2: "Sí, siempre que el comprador se halle en posesión de la guía de pertenencia",
         answer3: "No",
-        solucion: "Sí se puede, siempre que tenga licencia de armas"
+        solucion: "No"
     ),
     Question(
         question: "En ningún caso podrán hacerse los envíos de:",
@@ -1141,7 +1176,7 @@ let t3: [Question] = [
         answer1: "Cierto",
         answer2: "Falso",
         answer3: "Solo en las de 2ª categoría",
-        solucion: "Cierto"
+        solucion: "Falso"
     ),
     Question(
         question: "¿Cada cuántos años pasan revista las armas de la 2ª categoría?",
@@ -1204,7 +1239,7 @@ let t3: [Question] = [
         answer1: "La presentación del Arma",
         answer2: "Tiene que ser pasada por el/la titular del Arma",
         answer3: "Las dos son ciertas",
-        solucion: "Las dos son ciertas"
+        solucion: "La presentación del Arma"
     ),
     Question(
         question: "El hecho de no pasar la revista de armas constituye:",
@@ -1225,14 +1260,14 @@ let t3: [Question] = [
         answer1: "Cada tres años",
         answer2: "Cada cinco años",
         answer3: "En cada concurso",
-        solucion: "Cada tres años"
+        solucion: "Cada cinco años"
     ),
     Question(
         question: "¿Cada cuánto tiempo pasarán revista las ballestas?",
         answer1: "Las ballestas no pasan revista, por no ser armas de fuego",
         answer2: "Cada tres años",
         answer3: "Cada cinco años como las escopetas",
-        solucion: "Las ballestas no pasan revista, por no ser armas de fuego"
+        solucion: "Cada cinco años como las escopetas"
     ),
     Question(
         question: "¿Puede un tercero, con licencia de armas, pasar revista de una escopeta?",
@@ -1260,7 +1295,7 @@ let t3: [Question] = [
         answer1: "5 años",
         answer2: "3 años",
         answer3: "No pasa revista",
-        solucion: "No pasa revista"
+        solucion: "5 años"
     ),
     Question(
         question: "Una carabina de repetición accionada por gas comprimido, no asimilada a escopeta, pasará revista de armas cada:",
@@ -1302,7 +1337,7 @@ let t3: [Question] = [
         answer1: "Se participa siempre",
         answer2: "Cuando se enajena a una armería",
         answer3: "Cuando se regala a alguien, sin mediar precio",
-        solucion: "Cuando se enajena a una armería"
+        solucion: "Se participa siempre"
     ),
     Question(
         question: "¿Qué requisito es indispensable que tenga el comprador de un arma de fuego?",
@@ -1403,7 +1438,6 @@ let t3: [Question] = [
         solucion: "Que cumple con las medidas de seguridad impuestas en la custodia de la misma"
     )
 ]
-
 
 let t4 = [
     Question(
