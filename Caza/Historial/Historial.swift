@@ -39,8 +39,8 @@ struct Historial: View {
 
     // Función para eliminar un examen
     func deleteExam(at index: Int) {
-//        results.remove(at: index) // Eliminar del array local
-//        CoreDataStack.shared.deleteResult(at: index) // Eliminar de Core Data
+        CoreDataStack.shared.deleteExam(exam: results[index].exam) // Eliminar de Core Data
+        self.results = CoreDataStack.shared.fetchAllResults()
 //        print("Examen eliminado en el índice \(index)")
     }
 }
