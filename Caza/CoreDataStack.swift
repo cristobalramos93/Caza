@@ -135,5 +135,88 @@ extension CoreDataStack {
             print("Error al eliminar resultados en Core Data: \(error.localizedDescription)")
         }
     }
+    
+    func fetchAllErrors() -> [Question] {
+        let fetchRequest: NSFetchRequest<Resultado> = Resultado.fetchRequest()
+        
+        do {
+            let resultados = try persistentContainer.viewContext.fetch(fetchRequest)
+            // Convertimos el array de objetos Core Data a nuestro array de Result
+            return resultados.compactMap { resultado in
+                if let resultData = resultado.errorQuestion {
+                    return try? JSONDecoder().decode(Question.self, from: resultData)
+                }
+                return nil
+            }
+        } catch {
+            print("Error al obtener los resultados de Core Data: \(error.localizedDescription)")
+            return []
+        }
+    }
+    
+    func saveError(errorQuestion: Question) {
+        // 1. Buscar todos los Resultados guardados
+        let fetchRequest: NSFetchRequest<Resultado> = Resultado.fetchRequest()
+        
+        do {
+            let resultados = try persistentContainer.viewContext.fetch(fetchRequest)
+            
+            // 2. Comparar manualmente los arrays de 'exam'
+            if let existingResult = resultados.first(where: { resultado in
+                if let resultData = resultado.errorQuestion,
+                   let decodedResult = try? JSONDecoder().decode(Question.self, from: resultData) {
+                    return decodedResult == errorQuestion // Comparamos el array 'exam'
+                }
+                return false
+            }) {
+                // 3. Si encontramos un resultado con el mismo 'exam', lo actualizamos
+                if let encodedResult = try? JSONEncoder().encode(errorQuestion) {
+                    existingResult.errorQuestion = encodedResult
+                }
+            } else {
+                // 4. Si no lo encontramos, creamos un nuevo Resultado
+                let newResultado = Resultado(context: persistentContainer.viewContext)
+                if let encodedResult = try? JSONEncoder().encode(errorQuestion) {
+                    newResultado.errorQuestion = encodedResult
+                }
+            }
+            
+            // 5. Guardar los cambios en Core Data
+            save()
+            
+        } catch {
+            print("Error al buscar o guardar en Core Data: \(error.localizedDescription)")
+        }
+    }
+    
+    func deleteError(errorQuestion: Question) { //comprobar si funciona
+        
+        // 1. Crear un fetch request para obtener todos los resultados
+        let fetchRequest: NSFetchRequest<Resultado> = Resultado.fetchRequest()
+        
+        do {
+            // 2. Recuperar todos los resultados almacenados en Core Data
+            let errores = try persistentContainer.viewContext.fetch(fetchRequest)
+            
+            // 3. Iterar sobre los resultados y eliminar aquellos que tengan el mismo 'exam'
+            for resultado in errores {
+                if let resultData = resultado.errorQuestion,
+                   let decodedResult = try? JSONDecoder().decode(Question.self, from: resultData) {
+                    
+                    // Comparar el array 'exam' almacenado con el array que se desea eliminar
+                    if decodedResult == errorQuestion {
+                        // 4. Si coinciden, eliminar el resultado
+                        persistentContainer.viewContext.delete(resultado)
+                    }
+                }
+            }
+            
+            // 5. Guardar los cambios para confirmar la eliminación
+            save()
+            
+        } catch {
+            print("Error al eliminar resultados en Core Data: \(error.localizedDescription)")
+        }
+    }
 
 }

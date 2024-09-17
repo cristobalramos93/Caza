@@ -15,7 +15,7 @@ struct CazaApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Menu()
             // Inject the persistent container's managed object context
             // into the environment.
                 .environment(\.managedObjectContext,

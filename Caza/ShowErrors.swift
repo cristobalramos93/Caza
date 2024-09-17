@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ErrorsTest: View {
+struct ShowErrors: View {
     var exam: [Question]
     @State var answerIndex: Int
     var isCorrect: [Bool]
@@ -54,6 +54,6 @@ struct ErrorsTest: View {
 }
 
 #Preview {
-    ErrorsTest(exam: [], answerIndex: 0, isCorrect: [], answer: [])
+    ShowErrors(exam: [], answerIndex: 0, isCorrect: [], answer: [])
 }
 

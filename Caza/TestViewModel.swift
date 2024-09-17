@@ -12,8 +12,6 @@ import CoreData
 
 enum TypeTest {
     case random
-    case lesson(Int)
-    case errors
     case historial(Result)
 }
 
@@ -39,8 +37,6 @@ class TestViewModel: ObservableObject {
         //self.historicalResults = CoreDataStack.shared.fetchAllResults()
         switch type {
         case .random: createRandomTest()
-        case .lesson(let lesson): createLessonTest(lesson)
-        case .errors: createErrorsTest()
         case .historial(let result): createHistorialTest(result)
         }
     }
@@ -92,14 +88,6 @@ class TestViewModel: ObservableObject {
         }
     }
     
-    func createLessonTest(_ lesson: Int) {
-        answerIndex = 0
-
-    }
-    func createErrorsTest() {
-        answerIndex = 0
-    }
-    
     func siguiente() {
         answerIndex = answerIndex + 1
     }
@@ -140,6 +128,7 @@ class TestViewModel: ObservableObject {
             isCorrect?[answerIndex] = true
         } else {
             isCorrect?[answerIndex] = false
+            CoreDataStack.shared.saveError(errorQuestion: exam[answerIndex])
         }
         if answered?.allSatisfy({ $0 == true }) ?? false {
             fin = true

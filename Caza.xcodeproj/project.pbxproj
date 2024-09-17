@@ -8,14 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		8F35432E2C98A04E008AADB7 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35432D2C98A04E008AADB7 /* ResultView.swift */; };
-		8F3543302C98AECA008AADB7 /* ErrorsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35432F2C98AECA008AADB7 /* ErrorsTest.swift */; };
+		8F3543302C98AECA008AADB7 /* ShowErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35432F2C98AECA008AADB7 /* ShowErrors.swift */; };
 		8F3543332C98C55F008AADB7 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F3543322C98C55F008AADB7 /* CoreData.framework */; };
 		8F3543442C98E01D008AADB7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8F3543422C98E01D008AADB7 /* Model.xcdatamodeld */; };
 		8F3543462C98F482008AADB7 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3543452C98F482008AADB7 /* CoreDataStack.swift */; };
 		8F3543482C98F5E0008AADB7 /* Historial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3543472C98F5E0008AADB7 /* Historial.swift */; };
 		8F35434A2C98F65F008AADB7 /* Exam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3543492C98F65F008AADB7 /* Exam.swift */; };
+		8F35434E2C99C9DF008AADB7 /* Lessons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35434D2C99C9DF008AADB7 /* Lessons.swift */; };
+		8F3543502C99CF3B008AADB7 /* TestLesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35434F2C99CF3B008AADB7 /* TestLesson.swift */; };
+		8F3543532C99DB08008AADB7 /* FailsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3543522C99DB08008AADB7 /* FailsTest.swift */; };
 		8F85B6632C95EAA60036F0D7 /* CazaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85B6622C95EAA60036F0D7 /* CazaApp.swift */; };
-		8F85B6652C95EAA60036F0D7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85B6642C95EAA60036F0D7 /* ContentView.swift */; };
+		8F85B6652C95EAA60036F0D7 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85B6642C95EAA60036F0D7 /* Menu.swift */; };
 		8F85B6672C95EAA70036F0D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F85B6662C95EAA70036F0D7 /* Assets.xcassets */; };
 		8F85B66A2C95EAA70036F0D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F85B6692C95EAA70036F0D7 /* Preview Assets.xcassets */; };
 		8F85B6742C95EAA70036F0D7 /* CazaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F85B6732C95EAA70036F0D7 /* CazaTests.swift */; };
@@ -46,15 +49,18 @@
 
 /* Begin PBXFileReference section */
 		8F35432D2C98A04E008AADB7 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		8F35432F2C98AECA008AADB7 /* ErrorsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorsTest.swift; sourceTree = "<group>"; };
+		8F35432F2C98AECA008AADB7 /* ShowErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowErrors.swift; sourceTree = "<group>"; };
 		8F3543322C98C55F008AADB7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		8F3543432C98E01D008AADB7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		8F3543452C98F482008AADB7 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		8F3543472C98F5E0008AADB7 /* Historial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Historial.swift; sourceTree = "<group>"; };
 		8F3543492C98F65F008AADB7 /* Exam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exam.swift; sourceTree = "<group>"; };
+		8F35434D2C99C9DF008AADB7 /* Lessons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lessons.swift; sourceTree = "<group>"; };
+		8F35434F2C99CF3B008AADB7 /* TestLesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestLesson.swift; sourceTree = "<group>"; };
+		8F3543522C99DB08008AADB7 /* FailsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailsTest.swift; sourceTree = "<group>"; };
 		8F85B65F2C95EAA60036F0D7 /* Caza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F85B6622C95EAA60036F0D7 /* CazaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CazaApp.swift; sourceTree = "<group>"; };
-		8F85B6642C95EAA60036F0D7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8F85B6642C95EAA60036F0D7 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		8F85B6662C95EAA70036F0D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F85B6692C95EAA70036F0D7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8F85B66F2C95EAA70036F0D7 /* CazaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CazaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,6 +117,24 @@
 			path = Historial;
 			sourceTree = "<group>";
 		};
+		8F35434C2C99C83F008AADB7 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				8F85B68C2C95EF640036F0D7 /* Questions.swift */,
+				8FAE867B2C977F900077D59E /* QuestionView.swift */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		8F3543512C99D623008AADB7 /* Lessons */ = {
+			isa = PBXGroup;
+			children = (
+				8F35434F2C99CF3B008AADB7 /* TestLesson.swift */,
+				8F35434D2C99C9DF008AADB7 /* Lessons.swift */,
+			);
+			path = Lessons;
+			sourceTree = "<group>";
+		};
 		8F85B6562C95EAA60036F0D7 = {
 			isa = PBXGroup;
 			children = (
@@ -135,19 +159,20 @@
 		8F85B6612C95EAA60036F0D7 /* Caza */ = {
 			isa = PBXGroup;
 			children = (
+				8F3543512C99D623008AADB7 /* Lessons */,
+				8F35434C2C99C83F008AADB7 /* Question */,
 				8F35434B2C98F664008AADB7 /* Historial */,
 				8F85B6622C95EAA60036F0D7 /* CazaApp.swift */,
-				8F85B6642C95EAA60036F0D7 /* ContentView.swift */,
+				8F85B6642C95EAA60036F0D7 /* Menu.swift */,
 				8F85B6662C95EAA70036F0D7 /* Assets.xcassets */,
 				8F85B6682C95EAA70036F0D7 /* Preview Content */,
-				8F85B68C2C95EF640036F0D7 /* Questions.swift */,
 				8FAE86792C9775170077D59E /* Test.swift */,
 				8FAE867D2C97A7130077D59E /* TestViewModel.swift */,
-				8FAE867B2C977F900077D59E /* QuestionView.swift */,
 				8F35432D2C98A04E008AADB7 /* ResultView.swift */,
-				8F35432F2C98AECA008AADB7 /* ErrorsTest.swift */,
+				8F35432F2C98AECA008AADB7 /* ShowErrors.swift */,
 				8F3543422C98E01D008AADB7 /* Model.xcdatamodeld */,
 				8F3543452C98F482008AADB7 /* CoreDataStack.swift */,
+				8F3543522C99DB08008AADB7 /* FailsTest.swift */,
 			);
 			path = Caza;
 			sourceTree = "<group>";
@@ -307,12 +332,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3543302C98AECA008AADB7 /* ErrorsTest.swift in Sources */,
+				8F3543532C99DB08008AADB7 /* FailsTest.swift in Sources */,
+				8F3543302C98AECA008AADB7 /* ShowErrors.swift in Sources */,
 				8FAE867E2C97A7130077D59E /* TestViewModel.swift in Sources */,
 				8F85B68D2C95EF640036F0D7 /* Questions.swift in Sources */,
 				8FAE867A2C9775170077D59E /* Test.swift in Sources */,
-				8F85B6652C95EAA60036F0D7 /* ContentView.swift in Sources */,
+				8F35434E2C99C9DF008AADB7 /* Lessons.swift in Sources */,
+				8F85B6652C95EAA60036F0D7 /* Menu.swift in Sources */,
 				8F3543462C98F482008AADB7 /* CoreDataStack.swift in Sources */,
+				8F3543502C99CF3B008AADB7 /* TestLesson.swift in Sources */,
 				8F3543442C98E01D008AADB7 /* Model.xcdatamodeld in Sources */,
 				8F85B6632C95EAA60036F0D7 /* CazaApp.swift in Sources */,
 				8F35434A2C98F65F008AADB7 /* Exam.swift in Sources */,

@@ -71,7 +71,7 @@ struct ResultView: View {
                             .shadow(radius: 5)
                     }
                     
-                    NavigationLink(destination: ErrorsTest(exam: exam, answerIndex: answerIndex, isCorrect: isCorrect, answer: answer)) {
+                    NavigationLink(destination: ShowErrors(exam: exam, answerIndex: answerIndex, isCorrect: isCorrect, answer: answer)) {
                         Text("Ver errores")
                             .font(.title2)
                             .bold()
@@ -87,7 +87,7 @@ struct ResultView: View {
                 
                 // Botones adicionales
                 HStack(spacing: 30) {
-                    NavigationLink(destination: ContentView()) {
+                    NavigationLink(destination: Menu()) {
                         Text("Ir al Menú")
                             .font(.title2)
                             .bold()

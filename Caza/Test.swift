@@ -21,7 +21,8 @@ struct Test: View {
                         NavigationLink(destination: ResultView(result: viewModel.result(),
                                                                repeatt: {
                             viewModel.isRepeat = false
-                            viewModel.repeatt() },
+                            viewModel.repeatt()
+                        },
                                                                exam: viewModel.exam,
                                                                answerIndex: viewModel.answerIndex,
                                                                isCorrect: viewModel.isCorrect ?? [],
@@ -82,6 +83,7 @@ struct Test: View {
                 viewModel.createTest(type)
                 isReady = true
             }
+            .navigationBarBackButtonHidden()
     }
 }
 

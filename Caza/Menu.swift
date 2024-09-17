@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct Menu: View {
     var body: some View {
         NavigationStack {
             ZStack {
@@ -30,28 +30,24 @@ struct ContentView: View {
                         VStack(spacing: 20) {
                             // Botón Simulacro de Examen
                             NavigationLink(destination: Test(type: .random)) {
-                                ButtonView(title: "Simulacro", iconName: "target")
+                                ButtonView(title: "Hacer Test Aleatorio", iconName: "target")
                             }
                             
                             // Botón Falladas
-                            Button(action: {
-                                print("Botón Falladas presionado")
-                            }) {
-                                ButtonView(title: "Falladas", iconName: "xmark.octagon.fill", gradientColors: [Color.orange, Color.pink])
+                            NavigationLink(destination: FailsTest()) {
+                                ButtonView(title: "Preguntas Falladas", iconName: "xmark.octagon.fill", gradientColors: [Color.orange, Color.pink])
                             }
                         }
 
                         VStack(spacing: 20) {
                             // Botón Por Temas
-                            Button(action: {
-                                print("Botón Por Temas presionado")
-                            }) {
-                                ButtonView(title: "Por Temas", iconName: "list.bullet", gradientColors: [Color.red, Color.purple])
+                            NavigationLink(destination: Lessons()) {
+                                ButtonView(title: "Test Por Temas", iconName: "list.bullet", gradientColors: [Color.red, Color.purple])
                             }
 
                             // Botón Historial
                             NavigationLink(destination: Historial()) {
-                                ButtonView(title: "Historial", iconName: "clock.arrow.circlepath", gradientColors: [Color.yellow, Color.green])
+                                ButtonView(title: "Tests Realizados", iconName: "clock.arrow.circlepath", gradientColors: [Color.yellow, Color.green])
                             }
                         }
                     }
@@ -59,6 +55,7 @@ struct ContentView: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden()
     }
 }
 
@@ -91,5 +88,5 @@ struct ButtonView: View {
 }
 
 #Preview {
-    ContentView()
+    Menu()
 }
