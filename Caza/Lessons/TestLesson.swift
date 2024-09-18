@@ -6,6 +6,8 @@ struct TestLesson: View {
     @State var answer: [String]?
     @Environment(\.dismiss) var dismiss
     @State var showCorrect: Bool = false
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack {
             // Vista de la pregunta actual
@@ -58,6 +60,8 @@ struct TestLesson: View {
         .onAppear() {
             answer = Array(repeating: "", count: exam.count)
         }
+        .navigationBarItems(leading: BackButton(presentationMode: _presentationMode, foregroundColor: .black))
+        .navigationBarBackButtonHidden(true)
     }
     
     // Función para moverse a la pregunta anterior

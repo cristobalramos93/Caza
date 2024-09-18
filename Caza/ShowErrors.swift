@@ -12,6 +12,7 @@ struct ShowErrors: View {
     @State var answerIndex: Int
     var isCorrect: [Bool]
     var answer: [String]
+    @Environment(\.presentationMode) var presentationMode
     //var answered: [Bool]
     let columns = [
         GridItem(.adaptive(minimum: 40))  // Cada círculo tendrá al menos 40 puntos de ancho
@@ -50,10 +51,11 @@ struct ShowErrors: View {
                 
             }
         }
+        .navigationBarItems(leading: BackButton(presentationMode: _presentationMode, foregroundColor: .black))
+        .navigationBarBackButtonHidden(true)
     }
 }
 
 #Preview {
     ShowErrors(exam: [], answerIndex: 0, isCorrect: [], answer: [])
 }
-

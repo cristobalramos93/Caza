@@ -2,7 +2,8 @@ import SwiftUI
 
 struct Lessons: View {
     let temas = Array(1...7)  // Lista de temas del 1 al 7
-    
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         NavigationView {
             VStack(spacing: 20) {
@@ -29,6 +30,8 @@ struct Lessons: View {
                 Spacer()
             }
         }
+        .navigationBarItems(leading: BackButton(presentationMode: _presentationMode, foregroundColor: .black))
+        .navigationBarBackButtonHidden(true)
     }
     
     // Función para devolver el array correspondiente de preguntas basado en el tema

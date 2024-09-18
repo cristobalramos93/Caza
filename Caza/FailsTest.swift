@@ -7,7 +7,8 @@ struct FailsTest: View {
     @Environment(\.dismiss) var dismiss
     @State var showCorrect: Bool = false
     @State var successfulFailures: [Question] = []
-    
+    @Environment(\.presentationMode) var presentationMode
+
     var body: some View {
         VStack {
             // Vista de la pregunta actual
@@ -92,6 +93,8 @@ struct FailsTest: View {
         .onDisappear() {
             deleteSuccessfulFailures()
         }
+        .navigationBarItems(leading: BackButton(presentationMode: _presentationMode, foregroundColor: .black))
+        .navigationBarBackButtonHidden(true)
     }
     
     // Función para moverse a la pregunta anterior

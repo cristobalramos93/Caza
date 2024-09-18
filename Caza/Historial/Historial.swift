@@ -2,6 +2,7 @@ import SwiftUI
 
 struct Historial: View {
     @State var results: [Result] = CoreDataStack.shared.fetchAllResults() // Lista de resultados de exámenes
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         NavigationView {
@@ -35,6 +36,8 @@ struct Historial: View {
         .onAppear {
             self.results = CoreDataStack.shared.fetchAllResults()
         }
+        .navigationBarItems(leading: BackButton(presentationMode: _presentationMode, foregroundColor: .black))
+        .navigationBarBackButtonHidden(true)
     }
 
     // Función para eliminar un examen
