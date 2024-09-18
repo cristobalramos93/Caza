@@ -10,6 +10,12 @@ struct TestLesson: View {
     
     var body: some View {
         VStack {
+            // Mostrar progreso de las preguntas
+            Text("Pregunta \(answerIndex + 1) de \(exam.count)")
+                .font(.headline)
+                .padding(.top, 10)
+                .padding(.bottom, 10)
+
             // Vista de la pregunta actual
             QuestionView(question: exam[answerIndex],
                          answered: { an in resolve(answerr: an) },

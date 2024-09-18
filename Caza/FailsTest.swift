@@ -13,6 +13,11 @@ struct FailsTest: View {
         VStack {
             // Vista de la pregunta actual
             if exam.count > 0 {
+                Text("Pregunta \(answerIndex + 1) de \(exam.count)")
+                    .font(.headline)
+                    .padding(.top, 10)
+                    .padding(.bottom, 10)
+                
                 QuestionView(question: exam[answerIndex],
                              answered: { an in resolve(answerr: an) },
                              selectedAnswer: answer?[answerIndex] ?? "",
