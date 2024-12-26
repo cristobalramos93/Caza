@@ -15,7 +15,7 @@ struct Lessons: View {
                 // Botones para cada tema
                 ForEach(temas, id: \.self) { tema in
                     NavigationLink(destination: TestLesson(exam: getExam(for: tema))) {
-                        Text("Tema \(tema)")
+                        Text("\(tema) - \(getTitleLesson(for: tema))")
                             .font(.system(size: 20, weight: .bold, design: .rounded))
                             .frame(maxWidth: .infinity)
                             .padding()
@@ -46,6 +46,20 @@ struct Lessons: View {
         case 7: return t7
         default:
             return t1
+        }
+    }
+    
+    func getTitleLesson(for tema: Int) -> String {
+        switch tema {
+        case 1: return "Funcionamiento de las armas"
+        case 2: return "Categorías de las armas según el vigente Reglamento de Armas"
+        case 3: return "Circulación de las armas"
+        case 4: return "Documentación para la tenencia y uso de armas"
+        case 5: return "Régimen sancionador"
+        case 6: return "Reparación de armas"
+        case 7: return "Armas de colección"
+        default:
+            return ""
         }
     }
 }
