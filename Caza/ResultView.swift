@@ -11,7 +11,7 @@ struct ResultView: View {
     @Environment(\.dismiss) var dismiss
 
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 // Fondo que cambia entre verde y rojo
                 (result.success ? Color.green.opacity(0.3) : Color.red.opacity(0.3))
@@ -124,16 +124,16 @@ struct ResultView: View {
     }
 }
 
-struct ResultView_Previews: PreviewProvider {
-    static var previews: some View {
-        ResultView(
-            result: Result(exam: [], success: true, correctAnswers: 22, incorrectAnswers: 2),
-            repeatt: {},
-            exam: [],
-            answerIndex: 0,
-            isCorrect: [],
-            answer: [],
-            startNewExam: {}
-        )
-    }
-}
+//struct ResultView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ResultView(
+//            result: Result(exam: [], success: true, correctAnswers: 22, incorrectAnswers: 2),
+//            repeatt: {},
+//            exam: [],
+//            answerIndex: 0,
+//            isCorrect: [],
+//            answer: [],
+//            startNewExam: {}
+//        )
+//    }
+//}
